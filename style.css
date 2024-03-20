@@ -1,0 +1,247 @@
+:root{
+    --azul-dnc:#0c70f2;
+    --preto-dnc: #000000;
+    --cinza-hover: #b6afaf;
+    --font-dnc: 'Inter'
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5), 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
+}
+#principal{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: #303030;
+
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    border-bottom: 1px solid #BABABA;
+}
+#principal div a{
+    font-size: 25px;
+    font-weight: 600px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-dnc);
+}
+#principal div a:hover{
+    color: var(--cinza-hover);
+}
+
+#principal button{
+    margin-right: 5%;
+    background-color: var(--azul-dnc);
+    border: 0px;
+    height: 40px;
+    width: 80px;
+    align-items: center;
+    font-family: var(--font-dnc);
+    font-size: 20px;
+    font: weight 600px;
+    color: white;
+
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+}
+    #menu {
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    }
+
+    /*Seção principal do site*/
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    header{
+        color: white;
+        font-family: var(--font-dnc);
+
+    }
+    header h1{
+        font-size: 80px;
+        font-weight: 800px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    header h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700px;
+        margin-bottom: 100px;
+    }
+    header .preto{
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    /*formulario*/
+    form{
+        color: white;
+        font-family: var(--font-dnc);
+        font-size: 30px;
+        font-weight: 600;
+        width: 700px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    form input{
+        border-radius: 10px;
+        height: 30px;
+        border: 0px;
+        font-size: 20px;
+        padding: 10px;
+        padding-left: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    form label{
+        margin: 10px 0px 10px 0px;
+    }
+    form input::placeholder{
+       color: rgba(57,57,57, 0.5);
+    }
+
+    .checkbox-itens label{
+        font-size: 25px; 
+    }
+
+    .checkbox-itens{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cb{
+        transform: scale(1.7);
+        padding: 15px;
+    }
+    input[type="submit"]{
+        background-color: var(--azul-dnc);
+        width: 100%;
+        height: 56px;
+        color: white;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 600;
+        font-family: var(--font-dnc);
+        box-shadow: 0px 6px 4px rgba(12,112,242, 0.25);
+        margin-top: 100px;
+        cursor: pointer;
+    }
+    #rodape{
+        height: 500px;
+        background-color: #0c70f2;
+        font-family: var(--font-dnc);
+        display: flex;  
+        justify-content: space-around;
+        color: white;
+        text-align: center;
+    }
+
+    /* Primeira coluna */
+    #escolas{
+        margin-top: 25px;
+    }
+
+    #titulo{
+        background-color: black;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        margin-left: 90px;
+    
+    }
+    #titulo h1{
+        text-align: center;
+        font-family: var(--font-dnc); 
+        font-size: 25px;
+        padding-top: 3px;
+    }
+
+    .text_esc{
+        font-size: 25px;
+        font-family:var(--font-dnc);
+    }
+
+    .text_esc a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .text_esc a:hover{
+        cursor: pointer;
+    }
+    .text_esc a:visited{
+        color: white;
+    }
+
+    /* Segunda coluna*/
+    #sobre{
+        margin-top: 25px;
+    }
+
+    
+    #sobre h1{
+        background-color: black;
+        border-radius: 10px;
+        width: 170px;
+        height: 35px;
+        font-family: var(--font-dnc); 
+        font-size: 25px;
+        padding-top: 3px;
+        margin-left: 27px;
+    }
+    
+    .text_sobre a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .text_sobre a:hover{
+        cursor: pointer;
+    }
+
+    .text_sobre a:visited{
+        color:white;
+    }
+
+    .text_sobre{
+        font-size: 25px;
+        font-family:var(--font-dnc);
+        
+    }
+
+    #texto{
+        text-align: center;
+        margin-top: 130px;
+    }
+
+    #frase{
+        background-color: var(--azul-dnc);
+        color: white;
+        font-family: var(--font-dnc);
+        font-size: 25px;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+    }
+
