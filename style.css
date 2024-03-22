@@ -147,104 +147,103 @@ body{
         margin-top: 100px;
         cursor: pointer;
     }
-    #rodape{
-        height: 500px;
-        background-color: #0c70f2;
-        font-family: var(--font-dnc);
-        display: flex;  
+     
+    /*Rodapé*/
+
+    footer{
+        width: 100%;
+        background-color: var(--azul-dnc);
+    }
+
+    footer .Linha1{
+        display: flex;
         justify-content: space-around;
-        color: white;
-        text-align: center;
+        align-items: center;
+        margin-left: 50px;
+        margin-right:50px;
+        width: 100%;
     }
 
-    /* Primeira coluna */
-    #escolas{
-        margin-top: 25px;
+    footer ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        font-family: var(--font-dnc);
+        font-size: 18px;
+        font-weight: 600;
     }
-
-    #titulo{
-        background-color: black;
-        border-radius: 10px;
-        width: 120px;
-        height: 40px;
-        text-align: center;
-        margin-left: 90px;
     
+
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
     }
-    #titulo h1{
+
+    footer h5{
         text-align: center;
-        font-family: var(--font-dnc); 
-        font-size: 25px;
-        padding-top: 3px;
+        color: white;
+        font-weight: 800;
+        font-family: var(--font-dnc);
+        font-size: 18px;
+        background-color: #000000;
+        border-radius: 10px;
+
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 15px;
+
     }
 
-    .text_esc{
-        font-size: 25px;
-        font-family:var(--font-dnc);
+    footer ul li{
+        text-align: center;
+        color: white;
+
+        margin: 20px 0px 20px 0px;
     }
 
-    .text_esc a{
+    footer ul li a{
+        color: white;
         text-decoration: none;
+    }
+    footer ul li a:hover{
+        color: var(--cinza-hover);
+    }
+
+    footer .endereco{
+        font-family: var(--font-dnc);
+        font-size: 18px;
+        font-weight: 600;
         color: white;
+        text-align: center;
+        width: 20%;
     }
 
-    .text_esc a:hover{
-        cursor: pointer;
-    }
-    .text_esc a:visited{
-        color: white;
-    }
-
-    /* Segunda coluna*/
-    #sobre{
-        margin-top: 25px;
-    }
-
-    
-    #sobre h1{
-        background-color: black;
-        border-radius: 10px;
-        width: 170px;
+    footer .linha2{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 10px;
         height: 35px;
-        font-family: var(--font-dnc); 
-        font-size: 25px;
-        padding-top: 3px;
-        margin-left: 27px;
     }
-    
-    .text_sobre a{
-        text-decoration: none;
+
+    footer .linha2 a{
+        font-family: var(--font-dnc);
+        font-weight: 600;
         color: white;
-    }
-
-    .text_sobre a:hover{
-        cursor: pointer;
-    }
-
-    .text_sobre a:visited{
-        color:white;
-    }
-
-    .text_sobre{
-        font-size: 25px;
-        font-family:var(--font-dnc);
+        font-size: 18px;
+        text-decoration: none;
+        padding: 5px;
         
     }
 
-    #texto{
-        text-align: center;
-        margin-top: 130px;
+    footer .linha2 a:first-child{
+        border-right: 3px solid white;
     }
 
-    #frase{
-        background-color: var(--azul-dnc);
-        color: white;
-        font-family: var(--font-dnc);
-        font-size: 25px;
-        padding: 15px 0px 15px 0px;
-        text-align: center;
+    footer .linha2 a:hover{
+        color: var(--cinza-hover);
     }
-
     @media only screen and (max-width: 600px) {
         /*Menu*/
 
@@ -256,6 +255,7 @@ body{
         #menu{
             flex-direction: column;
             width: 100%;
+            margin: 0px;
         }
 
         #menu a{
@@ -281,8 +281,8 @@ body{
         }
         section h2{
             font-size: 28px;
-            margin-left: 10px;
-            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
             line-height: 50px;
         }
 
@@ -297,4 +297,21 @@ body{
         .cb{
             transform: scale(1.2);
         }
+        /*Rodapé*/
+        footer .Linha1{
+            flex-direction: column;
+            margin-left: 2px;
+        }
+
+        footer .endereco{
+            width: 95%;
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+
+
     }
