@@ -245,3 +245,56 @@ body{
         text-align: center;
     }
 
+    @media only screen and (max-width: 600px) {
+        /*Menu*/
+
+        #principal{
+            flex-direction: column;
+            height: auto;
+        }
+        
+        #menu{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #menu a{
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        #menu a img{
+           width: 50px;
+           height: 50px;
+        }
+
+        #principal button{
+            margin-left: 40px;
+            width: 100%;
+            margin: 0px;
+        }
+
+        /*Seção*/
+        section h1{
+            font-size: 40px;
+        }
+        section h2{
+            font-size: 28px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 50px;
+        }
+
+        form{
+            width: 95%;
+            font-size: 20px;
+        }
+        
+        .checkbox-itens label{
+            font-size: 17px;
+        }
+        .cb{
+            transform: scale(1.2);
+        }
+    }
